@@ -1,0 +1,88 @@
+/******************************************
+/* CSS
+/*******************************************/
+html{
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  padding-top: 75px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.calculator-screen{
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: white;
+  color: black;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.calculator-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  padding-bottom: 5px;
+}
+
+button {
+  height: 60px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  margin: 7px;
+  padding: 5px;
+  box-shadow: 0 8px #999;
+  flex: 1 0 20%;
+}
+
+.all-clear {
+  background-color: red;
+  color: white;
+  font-size: 3rem;
+  
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+button:hover {
+  background-color: white;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+.all-clear:hover{
+  color: black;
+}
